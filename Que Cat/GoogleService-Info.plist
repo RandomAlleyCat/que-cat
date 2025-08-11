@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>662586012237-4oghrp66b6d2rutpcaopqjg1kaf82jfg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.662586012237-4oghrp66b6d2rutpcaopqjg1kaf82jfg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCJF5fHzdVYxbwUrDcEz0zLDb5LaNf_NSc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>662586012237</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.majesticav.quecat</string>
+	<key>PROJECT_ID</key>
+	<string>que-cat</string>
+	<key>STORAGE_BUCKET</key>
+	<string>que-cat.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:662586012237:ios:fb09c1579f82138da0e204</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-3450844845886411~7731792344</string>
+</dict>
+</plist>
