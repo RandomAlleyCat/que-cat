@@ -86,16 +86,16 @@ struct Prompt: Codable, Identifiable {
     
     func tokens(forModel modelName: String) -> Int {
         switch modelName {
-        case "gpt-3.5-turbo":
-            return 4096
-        case "gpt-4o-mini":
-            return 8192
+        case "gpt-5":
+            return 256000
+        case "gpt-5-nano", "gpt-4.1", "gpt-4o", "o4":
+            return 128000
+        case "gpt-4.1-mini", "gpt-4o-mini", "o4-mini", "gpt-4-turbo":
+            return 128000
         case "gpt-4":
             return 8192
-        case "gpt-4-turbo":
-            return 8192
-        case "gpt-4o":
-            return 128000
+        case "gpt-3.5-turbo":
+            return 16000
         default:
             return 128000
         }
