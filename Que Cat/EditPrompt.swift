@@ -82,21 +82,33 @@ struct PromptTextSection: View {
 struct ModelSettingsSection: View {
     @Binding var promptData: Prompt
     @State private var isCustomModel: Bool = false
-    
-    let models = [("gpt-4o-mini", "GPT-4o Mini"), ("gpt-3.5-turbo", "GPT-3.5 Turbo"), ("gpt-4", "GPT-4"), ("gpt-4-turbo", "GPT-4 Turbo"), ("gpt-4o", "GPT-4o")]
-    
+
+    let models = [
+        ("gpt-5", "GPT-5"),
+        ("gpt-5-nano", "GPT-5 Nano"),
+        ("gpt-4.1", "GPT-4.1"),
+        ("gpt-4.1-mini", "GPT-4.1 Mini"),
+        ("gpt-4o", "GPT-4o"),
+        ("gpt-4o-mini", "GPT-4o Mini"),
+        ("o4", "O4"),
+        ("o4-mini", "O4 Mini"),
+        ("gpt-4", "GPT-4 (Legacy)"),
+        ("gpt-4-turbo", "GPT-4 Turbo (Legacy)"),
+        ("gpt-3.5-turbo", "GPT-3.5 Turbo (Legacy)")
+    ]
+
     var tokens: Int {
         switch promptData.modelName {
-        case "gpt-4o-mini":
-            return 32000
-        case "gpt-3.5-turbo":
-            return 4096
+        case "gpt-5":
+            return 256000
+        case "gpt-5-nano", "gpt-4.1", "gpt-4o", "o4":
+            return 128000
+        case "gpt-4.1-mini", "gpt-4o-mini", "o4-mini", "gpt-4-turbo":
+            return 128000
         case "gpt-4":
             return 8192
-        case "gpt-4-turbo":
-            return 8192
-        case "gpt-4o":
-            return 128000
+        case "gpt-3.5-turbo":
+            return 16000
         default:
             return 128000
         }

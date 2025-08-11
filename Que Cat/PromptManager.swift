@@ -157,7 +157,7 @@ class PromptManager: ObservableObject {
     }
     
     func addNewPrompt() {
-        let newPrompt = Prompt(promptName: "", promptText: "", modelName: "gpt-3.5-turbo", temperature: 0.5, max_tokens: 4096, presence_penalty: 0.0, frequency_penalty: 0.0, logit_bias: [], stop: "", user: "")
+        let newPrompt = Prompt(promptName: "", promptText: "", modelName: "gpt-5-nano", temperature: 0.5, max_tokens: 128000, presence_penalty: 0.0, frequency_penalty: 0.0, logit_bias: [], stop: "", user: "")
         prompts.append(newPrompt)
         selectedPrompt = newPrompt
         isNewPrompt = true
